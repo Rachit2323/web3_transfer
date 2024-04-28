@@ -1,0 +1,124 @@
+{
+	"abi": [
+		{
+		  "anonymous": false,
+		  "inputs": [
+			{
+			  "indexed": true,
+			  "internalType": "address",
+			  "name": "recipeintOf",
+			  "type": "address"
+			},
+			{
+			  "indexed": false,
+			  "internalType": "address",
+			  "name": "recipeint",
+			  "type": "address"
+			},
+			{
+			  "indexed": false,
+			  "internalType": "string",
+			  "name": "recipeintName",
+			  "type": "string"
+			}
+		  ],
+		  "name": "recipeints",
+		  "type": "event"
+		},
+		{
+		  "anonymous": false,
+		  "inputs": [
+			{
+			  "indexed": true,
+			  "internalType": "address",
+			  "name": "from",
+			  "type": "address"
+			},
+			{
+			  "indexed": false,
+			  "internalType": "address",
+			  "name": "to",
+			  "type": "address"
+			},
+			{
+			  "indexed": false,
+			  "internalType": "uint256",
+			  "name": "amount",
+			  "type": "uint256"
+			},
+			{
+			  "indexed": false,
+			  "internalType": "string",
+			  "name": "symbol",
+			  "type": "string"
+			}
+		  ],
+		  "name": "transaction",
+		  "type": "event"
+		},
+		{
+		  "inputs": [
+			{
+			  "internalType": "address payable",
+			  "name": "_to",
+			  "type": "address"
+			},
+			{
+			  "internalType": "string",
+			  "name": "symbol",
+			  "type": "string"
+			}
+		  ],
+		  "name": "_transfer",
+		  "outputs": [],
+		  "stateMutability": "payable",
+		  "type": "function"
+		},
+		{
+		  "inputs": [
+			{
+			  "internalType": "address",
+			  "name": "recipient",
+			  "type": "address"
+			},
+			{
+			  "internalType": "string",
+			  "name": "name",
+			  "type": "string"
+			}
+		  ],
+		  "name": "addRecipents",
+		  "outputs": [],
+		  "stateMutability": "nonpayable",
+		  "type": "function"
+		},
+		{
+		  "inputs": [
+			{
+			  "internalType": "address",
+			  "name": "from",
+			  "type": "address"
+			},
+			{
+			  "internalType": "address",
+			  "name": "to",
+			  "type": "address"
+			},
+			{
+			  "internalType": "uint256",
+			  "name": "amount",
+			  "type": "uint256"
+			},
+			{
+			  "internalType": "string",
+			  "name": "symbol",
+			  "type": "string"
+			}
+		  ],
+		  "name": "saveTx",
+		  "outputs": [],
+		  "stateMutability": "nonpayable",
+		  "type": "function"
+		}
+	  ]
+}

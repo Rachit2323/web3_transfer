@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/atrey/Desktop/Blockchain/Dex/web3-paypal/contracts/Paypal.sol": {
+      "lastModificationDate": 1714212778707,
+      "contentHash": "fc809e1ad0e9865bea17e01a0c2cbc3b",
+      "sourceName": "contracts/Paypal.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "paypal"
+      ]
+    }
+  }
+}
