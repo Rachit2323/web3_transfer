@@ -8,7 +8,6 @@ import paypal from './paypal/paypal.json'
 const AppState = createContext();
 
 function App() {
-  // const paypal=paypalAbi.abi;
   const {ethereum} = window;
   const [login, setLogin] = useState(false);
   const [address, setAddress] = useState('');
