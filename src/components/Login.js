@@ -24,22 +24,25 @@ const Login = () => {
         App.setLogin(true);
         App.setPaypalContractAddress('0x80743Ae8d5E31c4c38EC513bF03D88221A07daF2')
         App.setExplorer("https://sepolia.etherscan.io")
-      } else if(chainId == "0x4") {
-        App.setChain("Rinkeby")
-        App.setCurrency("RinkebyEther")
-        App.setSymbol("rEth")
-        App.setLogin(true);
-        App.setPaypalContractAddress('0x6170b96101557cc11F076AA3907f7FF87Db54EE7')
-        App.setExplorer("https://rinkeby.etherscan.io")
-      } else if(chainId == "0x13881") {
-        App.setChain("Polygon")
-        App.setCurrency("Matic")
-        App.setSymbol("Matic")
-        App.setPaypalContractAddress('0x9Ad232e2D3812d5E915B864119f8212D51BFB9F5')
-        App.setLogin(true);
-        App.setExplorer("https://mumbai.polygonscan.com")
-      } else {
-        setError("Can only access with Sepolia, Rinkeby, Polygon Mumbai")
+      } 
+      // else if(chainId == "0x4") {
+      //   App.setChain("Rinkeby")
+      //   App.setCurrency("RinkebyEther")
+      //   App.setSymbol("rEth")
+      //   App.setLogin(true);
+      //   App.setPaypalContractAddress('0x6170b96101557cc11F076AA3907f7FF87Db54EE7')
+      //   App.setExplorer("https://rinkeby.etherscan.io")
+      // } else if(chainId == "0x13881") {
+      //   App.setChain("Polygon")
+      //   App.setCurrency("Matic")
+      //   App.setSymbol("Matic")
+      //   App.setPaypalContractAddress('0x9Ad232e2D3812d5E915B864119f8212D51BFB9F5')
+      //   App.setLogin(true);
+      //   App.setExplorer("https://mumbai.polygonscan.com")
+      // } 
+      else {
+        setError("Can only access with Sepolia")
+        // setError("Can only access with Sepolia, Rinkeby, Polygon Mumbai")
         App.setLogin(false);
       }
       

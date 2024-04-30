@@ -82,13 +82,14 @@ const removeToken = async () => {
   if(chain == "Sepolia") {
     setCurrency("SepoliaEther")
     setSymbol("rsEth")
-  } else if(chain == "Rinkeby") {
-    setCurrency("RinkebyEther")
-    setSymbol("rEth")
-  } else if(chain == "polygon") {
-    setCurrency("Matic")
-    setSymbol("Matic")
-  }
+  } 
+  // else if(chain == "Rinkeby") {
+  //   setCurrency("RinkebyEther")
+  //   setSymbol("rEth")
+  // } else if(chain == "polygon") {
+  //   setCurrency("Matic")
+  //   setSymbol("Matic")
+  // }
 
   setErcTokenAddress('');
   setShowErc(false);
@@ -160,19 +161,21 @@ const saveTx = async () => {
         setSymbol("sEth")
         setPaypalContractAddress('0x80743Ae8d5E31c4c38EC513bF03D88221A07daF2')
         setExplorer("https://sepolia.etherscan.io")
-      } else if(chainId == "0x4") {
-        setChain("Rinkeby")
-        setCurrency("RinkebyEther")
-        setSymbol("rEth")
-        setPaypalContractAddress('0x6170b96101557cc11F076AA3907f7FF87Db54EE7')
-        setExplorer("https://rinkeby.etherscan.io")
-      } else if(chainId == "0x13881") {
-        setChain("Polygon")
-        setCurrency("Matic")
-        setSymbol("Matic")
-        setPaypalContractAddress('0x9Ad232e2D3812d5E915B864119f8212D51BFB9F5')
-        setExplorer("https://mumbai.polygonscan.com")
-      } else {
+      }
+      //  else if(chainId == "0x4") {
+      //   setChain("Rinkeby")
+      //   setCurrency("RinkebyEther")
+      //   setSymbol("rEth")
+      //   setPaypalContractAddress('0x6170b96101557cc11F076AA3907f7FF87Db54EE7')
+      //   setExplorer("https://rinkeby.etherscan.io")
+      // } else if(chainId == "0x13881") {
+      //   setChain("Polygon")
+      //   setCurrency("Matic")
+      //   setSymbol("Matic")
+      //   setPaypalContractAddress('0x9Ad232e2D3812d5E915B864119f8212D51BFB9F5')
+      //   setExplorer("https://mumbai.polygonscan.com")
+      // }
+       else {
         setLogin(false);
       }
 

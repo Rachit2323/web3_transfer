@@ -23,9 +23,9 @@ const Main = () => {
           Recent Tx
         </li>
       {/* Global Tx */}
-        <li onClick={() => setRoute('global_tx')} className={`list-none cursor-pointer py-2 w-1/4 ${route == 'global_tx' ? "bg-black bg-opacity-60" : "bg-gray-900"} text-center rounded-tl-lg hover:bg-black hover:bg-opacity-60`}>
+        {/* <li onClick={() => setRoute('global_tx')} className={`list-none cursor-pointer py-2 w-1/4 ${route == 'global_tx' ? "bg-black bg-opacity-60" : "bg-gray-900"} text-center rounded-tl-lg hover:bg-black hover:bg-opacity-60`}>
           Global Tx
-        </li>
+        </li> */}
       </div>
       {/* Screen */}
       <div className='bg-black bg-opacity-60 pb-5 overflow-y-auto border-2 border-t-0 shadow-lg border-opacity-50 border-blue-800 rounded-b-lg w-1/2'>
